@@ -1,0 +1,90 @@
+#carouselExampleControls{
+    margin: 0;
+    height: 100-vh;
+    background-size: cover;
+  }
+  
+
+  .button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  .button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*home*/
+#home {
+  background-image: url(/assets/images/back.jpg);
+  height:100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 60px center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#home .btn{
+  background-color: black;
+  color: rgb(229, 229, 241);
+  outline: none;
+  border:none ;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 13px 30px;
+  transition: 0.3 ease;
+ }
+ 
+#home .btn:hover{
+  background-color:rgb(119, 116, 114);;    
+
+ }
+ .featur{
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px;
+}
+#barr{
+  width: 80px;
+  border-bottom: 4px solid rgb(255, 115, 0);
+  color: transparent ;  
+  margin-top:0px ;
+  margin-bottom: 50px;}
+/*shoes section*/
+#product > img{
+  height: 60%;
+}
+  #product:hover > img{
+  opacity: 70%;}
+
+  #product > div > button{
+  padding: 8px 14px;
+  text-transform: uppercase;
+  color: aliceblue;
+  background-color: coral;
+  border: none;
+  transition: 0.3s ease;
+  transform: translateY(20px);
+  opacity: 0;
+}
+#product:hover .bt {
+  transform: translateY(0);
+  opacity: 1;
+}
+#product > div > i:nth-child(n){
+  color: goldenrod;
+}

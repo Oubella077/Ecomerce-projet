@@ -1,0 +1,13 @@
+<div class="container py-5 " id="B">
+<div class="box mt-5">
+
+    <div class="my-2 w-25 mp-2" >
+       <app-select [title]= " 'Categories' " [data]="categories" (selectvalue)="filtercategorie($event)"> </app-select>
+    </div>
+   <div class="row" *ngIf="!spin">
+    <div class="col-md-3 col-sm-12 " *ngFor="let item of products">
+       <app-product [data]="item" (addItem)="addtocart($event)" ></app-product>
+    </div> 
+    </div>
+    <app-spinner  *ngIf="spin"></app-spinner>
+</div></div>

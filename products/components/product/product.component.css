@@ -1,0 +1,14 @@
+
+.card:hover {
+    transition: all 0.8 ease-in-out;
+    transform: scale(1.05);
+
+ }
+
+ .card-text {
+    height: 9rem;
+overflow-y:scroll ;
+}
+.card-text::-webkit-scrollbar {
+    display: none;
+  }
