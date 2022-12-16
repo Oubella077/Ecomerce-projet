@@ -6,10 +6,10 @@ import { ProductsDetailsComponent } from './products/components/products-details
 import { HomeComponent } from './shared/components/home/home.component';
 
 const routes: Routes = [
-  {path:"products", component:AllProductsComponent },
+  {path:'products', component:AllProductsComponent },
   {path:"Detailsproduct/:id", component:ProductsDetailsComponent },
-  {path : "home" ,component:HomeComponent},
-  {path : "carts" ,component:CartComponent},
+  {path :"home" ,component:HomeComponent},
+  {path :"carts" ,component:CartComponent},
   {path:"**", redirectTo:"home", pathMatch:"full" }
 ];
 

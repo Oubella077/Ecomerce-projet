@@ -1,15 +1,15 @@
-<div class="card " style="width: 20rem; height:80%;">
+<div class="card mt-3" style="width: 17rem; height:400px; ">
    
-  <img class="card-img-top h-50 hover-shadow" src="{{data.image}}" alt="Card image cap" routerLink="/Detailsproduct/{{data.id}}">
-    <div class="card-body">
-      <h5 class="card-title">{{data.title}}</h5>
-      <p class="card-text"> {{data.description}}</p>
+  <img class="card-img-top  hover-shadow" style="height: 200px;" title="CLICK FOR MORE INFO" src="{{data.image}}"  alt="Card image cap" routerLink="/Detailsproduct/{{data.id}}">
+    <div class="card-body mb-1">
+      <h6 class="card-title h-20">{{data.title}}</h6>
+      <p class="card-text "   hidden> {{data.description}} </p>
       </div>
-      <div class="px-3 mb-2 d-flex justify-content-between align-items-center">
+      <div class="px-3 mt-1 mb-2 d-flex justify-content-between align-items-center">
       <button class="btn btn-primary" *ngIf="!active" (click)="active=true">Add To Cart</button>
       <div  class=" d-flex justify-content-between" *ngIf="active">
         <input type="number" class="form-control" [(ngModel)]="amount" >
-        <button class="btn btn-danger w-40" (click)="Add();active=false" >Add</button>  
+        <button class="btn btn-danger w-30" (click)="Add(); active=false" >Add</button>  
       </div>
        <span class="ms-3 bg-light w-30">{{data.price}}</span>
     </div>

@@ -3,7 +3,8 @@ import { Data } from '@angular/router';
 import { observable } from 'rxjs';
 import { product } from '../../model/product';
 import { ProductsService } from '../../services/products.service';
-
+declare function getToday(): any;
+declare function greetings(name: any): any;
 @Component({
   selector: 'app-all-products',
   templateUrl: './all-products.component.html',
@@ -17,8 +18,13 @@ export class AllProductsComponent implements OnInit {
  constructor(private service:ProductsService) { }
 
   ngOnInit(): void {
+    // call the externaljs functions
+   
     this.getproducts();
-    this.getcategories();}
+    this.getcategories(); 
+    getToday(); // without param
+    greetings('rohol'); // with param
+}
 
  getproducts(){ 
   this.spin=true; 
@@ -48,7 +54,6 @@ getcategories(){
  this.getproducts();
  else
   this.getproductcategories(value);
- 
  }
 
   getproductcategories(keyword: string){

@@ -10,15 +10,9 @@ export class ProductComponent implements OnInit {
 @Output() addItem=new EventEmitter();
 active:boolean=false;
 amount:number=0;
-  constructor() { }
+constructor() { }
 
-  ngOnInit(): void {
-  }
+ngOnInit(): void {}
 
 Add(){ 
-   this.addItem.emit({item:this.data,quantity:this.amount});
-  }
-  
-
-  
-}
+  this.addItem.emit({item:this.data,quantity:this.amount});}}

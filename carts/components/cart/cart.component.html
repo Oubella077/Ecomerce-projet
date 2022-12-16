@@ -2,12 +2,10 @@
     <div class="container h-100 py-5">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-10">
-          <div class="d-flex justify-content-between align-items-center mb-4">
-           
+          <div class="d-flex justify-content-between align-items-center mb-4">  
             <div><h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
             <h6 class="fw-normal ms-3 ">You have <label class="text-danger">{{cartproducts.length}}</label> items in your Cart</h6>
             </div>
-
             <div>
                 <button class="btn btn-danger  btn-sm" (click)="clearcart()">Clear Shopping Cart</button>
               <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!" class="text-body">price <i
@@ -51,7 +49,8 @@
                     <h5 class="mb-0">{{item.item.price * item.quantity}}</h5>
                   </div>
                 <div class="col-md-1 col-lg-1 col-xl-1 ">
-                  <button  class="text-danger bg-transparent border border-danger" (click)="delete(index)" ><i style="font-size: 25px;" class="bi bi-trash"></i></button>
+                  <button  class="text-danger bg-transparent border border-danger" (click)="delete(index)" >
+                    <i style="font-size: 25px;" class="bi bi-trash"></i></button>
                 </div>
               </div>
             </div>
@@ -59,14 +58,11 @@
           <div class="card" >
             <div class="card-body d-flex">
               <p class="text-center ms-5"><strong>Total : {{total}} </strong></p>
-          <button type="button" class="btn btn-primary btn-block btn-lg ms-auto" (click)="Addcart()">Proceed to Pay</button> 
-              
+          <button type="button" class="btn btn-primary btn-block btn-lg ms-auto" (click)="Addcart()">Proceed to Pay</button>   
             </div>
-           
         </div>
         <div class="card bg-success bg-opacity-50 my-2  p-1" *ngIf="success">
           <p class="pt-3 ms-5 "  >WELL Done! </p> 
- 
        </div>
     </div>
       </div>

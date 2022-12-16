@@ -90,3 +90,10 @@ transition: 0.3 ease;
  padding: 14px 10px;
 }
 }
+#liste{
+  font-size: 1.8rem;
+  font-weight:600 ;
+  position: absolute;
+  top: 55%;
+  left: 70%;
+}

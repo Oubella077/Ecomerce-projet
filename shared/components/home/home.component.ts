@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+declare var myObject1: any;
+
 
 @Component({
   selector: 'app-home',
@@ -9,7 +11,9 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
+    
+    myObject1.func1();
   }
 
 }
